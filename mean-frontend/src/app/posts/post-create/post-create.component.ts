@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 
 @Component({
     selector:'app-post-create',
@@ -6,10 +7,12 @@ import { Component } from "@angular/core";
 })
 export class PostCreateComponent{
     newPost="no data";
+    enteredValue="";
 
 
     onAddPost() {
-        this.newPost='this user\s post';
+        //console.log(postInput.value)
+        this.newPost=this.enteredValue
         alert('Post added!');
     }
 

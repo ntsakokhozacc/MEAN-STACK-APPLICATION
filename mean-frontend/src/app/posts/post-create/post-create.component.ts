@@ -5,7 +5,11 @@ import { Component } from "@angular/core";
     templateUrl:'./post-create.component.html'
 })
 export class PostCreateComponent{
+    newPost="no data";
+
+
     onAddPost() {
+        this.newPost='this user\s post';
         alert('Post added!');
     }
 
